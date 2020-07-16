@@ -7,9 +7,10 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-html, body{
+body, html{
     font-family: Georgia, serif;
     color: #002400;
+    scroll-behavior: smooth;
 }
 img{
     display: block;
@@ -19,6 +20,18 @@ span{
     padding: .2rem 1.2rem;
     border-radius: 5px;
     text-shadow: none;
+}
+a{
+    color: #fff;
+    background-color: #002400;
+    padding: .2rem 1.2rem;
+    border-radius: 5px;
+    transition: all .3s;
+}
+a:hover{
+    color: #002400;
+    background-color: #ffa500;
+    padding: .8rem 1.2rem;
 }
 
 /* navbar */
@@ -36,17 +49,14 @@ span{
     z-index: 10;
 }
 .navlogo{
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 .navlist a{
-    color: #e0e0e0;
-    transition: all .3s;
+    padding: 0;
 }
 .navlist a:hover{
-    color: #002400;
-    background-color: #ffa500;
+    border-radius: 5px;
     padding: .3rem .1rem;
-    border-radius: 3px;
 }
 
 /* welcome section */
@@ -77,7 +87,6 @@ span{
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* max-width: 1400px; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -111,18 +120,31 @@ span{
     text-decoration: underline;
 }
 .profile-link{
-    padding-bottom: 30px;
+    padding-bottom: 70px;
 }
-.profile-link a{
-    color: #fff;
-    background-color: #002400;
-    padding: .2rem 1.2rem;
-    border-radius: 5px;
+
+/* contact */
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url(../img/welcome-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contact h1{
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px #fff;
+}
+#contact a{
+    margin: 20px 0;
+}
+#contact p{
+    font-size: 1.2rem;
     font-weight: 600;
-    transition: all .3s;
-}
-.profile-link a:hover{
-    color: #002400;
-    background-color: #ffa500;
-    padding: .8rem 1.2rem;
+    text-shadow: 1px 1px 3px #fff;
 }
